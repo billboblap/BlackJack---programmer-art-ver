@@ -1,0 +1,50 @@
+<main>
+    <head>
+        <title>card game</title>
+        <script type="text/javascript" src="Game.js"></script>
+        <style>
+            .hand-container{
+                display: grid;
+                grid-row: 50px;
+                grid-column-gap: 10px;
+                grid-template-columns: 55px 55px 55px 55px 55px 55px 55px;
+            }
+            .hand-item{
+                border: 1px solid black;
+                background-color: white;
+                padding: 30px;
+                text-align: center;
+            }
+            .opp-hand-item{
+                border: 1px solid black;
+                background-color: red;
+                padding: 30px;
+                text-align: center;
+            }
+            .Deck{
+                padding: 30px;
+            }
+            body{
+                background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <button onclick="draw();">Hit me!</button><button onclick="pass();">Pass</button><button onclick="refresh();">Play Again</button>
+        <div id="hand-container" class="hand-container">
+            <div id="hand-item1" class="hand-item">n/a</div>
+            <div id="hand-item2" class="hand-item">n/a</div>
+            <div id="hand-item3" class="hand-item">n/a</div>
+            <div id="hand-item4" class="hand-item">n/a</div>
+            <div id="hand-item5" class="hand-item">n/a</div>
+            <div id="hand-item6" class="hand-item">n/a</div>
+            <div id="hand-item7" class="hand-item">n/a</div>
+        </div>
+        <p></p>
+        <div id="opponent-container" class="hand-container">
+            <!--this is ugly and i hate it but its better than the thing i did above which i cant be asked to fix-->
+            <!--they both perfom the same and dont have any effects on performance its just one looks uglier and one is harder to program lol-->
+            <div id="opp=item1" class="opp-hand-item">0</div><div id="opp=item2" class="opp-hand-item">0</div><div id="opp=item3" class="opp-hand-item">0</div><div id="opp=item4" class="opp-hand-item">0</div><div id="opp=item5" class="opp-hand-item">0</div><div id="opp=item6" class="opp-hand-item">0</div><div id="opp=item7" class="opp-hand-item">0</div>
+        </div>
+    </body>
+</main>
